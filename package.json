@@ -1,0 +1,51 @@
+{
+  "name": "api-app-lagu-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "^14.16.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bestzip": "^2.1.7",
+    "bin-version-check": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "diskusage-ng": "^1.0.0",
+    "dotenv": "^8.6.0",
+    "download": "^8.0.0",
+    "express": "^4.17.1",
+    "ffmpeg": "^0.0.4",
+    "google-play-scraper": "^7.1.3",
+    "image-downloader": "^4.0.1",
+    "ipware": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.13",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-gyp": "^7.1.2",
+    "node-rsa": "^1.1.1",
+    "p-limit": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.25.2",
+    "youtube-dl": "^3.4.0",
+    "yt-scraper": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
+}

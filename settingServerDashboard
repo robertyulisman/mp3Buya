@@ -1,0 +1,22 @@
+sudo nano /etc/nginx/sites-available/dash-audio-miranto.masyadi.com.conf
+
+sudo ln -s /etc/nginx/sites-available/dash-audio-miranto.masyadi.com.conf /etc/nginx/sites-enabled/
+
+server {
+	listen 80;
+	listen [::]:80;
+ 
+	server_name dash-audio-miranto.masyadi.com www.dash-audio-miranto.masyadi.com;
+	root /home/ahmadsuyadi/ReactDashboardMusicArgon/build;
+
+    index index.html index.htm;
+    location / {
+        if (!-e $request_filename){
+            rewrite ^(.*)$ /index.html break;
+        }
+    }
+}
+
+sudo certbot --nginx -d dash-audio-miranto.masyadi.com -d www.dash-audio-miranto.masyadi.com
+
+REACT_APP_BASE_URL=https://api-audio-miranto.masyadi.com npm run build

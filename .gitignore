@@ -1,0 +1,11 @@
+/node_modules
+# /public/audios/*
+# /public/images/audios/*
+# /public/images/users/*
+# /public/images/artist/*
+/db
+/.env
+generateAnu.js
+# utils/restore.js
+# !public/
+# !.gitignore
